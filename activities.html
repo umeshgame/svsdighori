@@ -9,7 +9,7 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- Page title -->
-      <title>Kole’s Kolson Preschool</title>
+      <title>SVS Dighori</title>
       <!--[if lt IE 9]>
       <script src="js/respond.js"></script>
       <![endif]-->
@@ -34,6 +34,158 @@
       <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
       <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+      <style>
+         * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            /*scroll-behavior: smooth;*/
+         }
+
+         body{
+            background-color: #ebedeb;
+         }
+
+
+         header{
+            text-align: center;
+            font-size: 35px;
+            background: url(https://images.pexels.com/photos/2909077/pexels-photo-2909077.jpeg?auto=compress&cs=tinysrgb&w=1600) fixed;
+
+            height: 100vh;
+
+            overflow: hidden;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            margin-bottom: 0;
+            position: relative;
+
+         }
+         .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+         }
+         header h1{
+            padding-bottom: 10px;
+         }
+
+         ul {
+            background: rgba(255, 255, 255, 0.54);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5.8px);
+            -webkit-backdrop-filter: blur(5.8px);
+
+            position: sticky;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            top: 0;
+         }
+
+         ul a {
+            display: block;
+            text-align: center;
+            padding: 15px;
+            font-size: 45px;
+         }
+
+
+
+         .imageBox{
+            padding: 0 6px 15px 6px;
+            float: left;
+            width: 24.99999%;
+         }
+
+
+         div.gallery {
+            border: 1px solid #ccc;
+         }
+
+         div.gallery:hover {
+            border: 1px solid #777;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: ease 0.1s;
+         }
+
+         div.gallery img {
+            width: 100%;
+            object-fit: cover;
+            height: 300px;
+         }
+
+         div.desc {
+            padding: 5px 10px 10px 10px;
+            text-align: center;
+         }
+
+         @media only screen and (max-width: 950px) {
+            .imageBox {
+               width: 49.99999%;
+               margin: 6px 0;
+            }
+         }
+
+         @media only screen and (max-width: 550px) {
+            .imageBox {
+               width: 100%;
+            }
+         }
+
+
+         .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+         }
+
+         footer{
+            text-align: center;
+            padding-bottom: 10px;
+         }
+
+         @media only screen and (max-width: 700px){
+            header{
+               font-size: 20px;
+            }
+            .glassHeader{
+               width: 400px;
+            }
+
+         }
+         @media only screen and (max-width: 550px){
+            header{
+               font-size: 16px;
+            }
+            ul a{
+               font-size: 28px;
+            }
+            .glassHeader{
+               width: 340px;
+            }
+            footer{
+               padding-bottom: 20px;
+            }
+         }
+
+         .glassHeader{
+            border-radius: 10px;
+            background: rgba( 255, 255, 255, 0.05);
+            backdrop-filter: blur( 4px );
+
+         }
+      </style>
+
+
+
    </head>
    <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
    <!-- Page width 'Boxed' of 'Full' -->
@@ -64,20 +216,20 @@
          <div class="collapse navbar-collapse" id="navbar-brand-centered">
 		  <div class="container">
                <ul class="nav navbar-nav page-scroll navbar-left">
-                  <li><a href="#page-top">Home</a></li>
-                  <li><a href="#about">About</a></li>
+                  <li><a href="https://svsdighori.edu.in/">Home</a></li>
+                  <li><a href="https://svsdighori.edu.in/">About</a></li>
                   
-                  <li><a href="#activities">Activities</a></li>
+                  <li><a href="https://svsdighori.edu.in/activities.html">Activities</a></li>
                  
                </ul>
                <ul class="nav navbar-nav page-scroll navbar-right">
                   
                   <!-- Dropdown -->
-                  <li><a href="#services">Services</a></li>
-                  <li><a href="#team">Parents</a></li>
+                  <li><a href="https://svsdighori.edu.in/">Services</a></li>
+                  <li><a href="https://svsdighori.edu.in/">Parents</a></li>
                   
-                  <li><a href="#contact">Contact</a></li>
-                  <li><a href="#"><span class="label label-danger">Login</span></a></li>
+                  <li><a href="https://svsdighori.edu.in/">Contact</a></li>
+
                    <!-- Dropdown -->
                   
                </ul>
@@ -96,49 +248,84 @@
       <!-- / section ends-->
 	  
       <!-- Section Services -->
-      <section id="about" class="color-section">
-         <div class="container">
-            <div class="container">
-               <div class="row">
 
-               </div>
-            </div>
-            <div class="row">
-			<!-- main text -->
-               <div class="col-md-12 col-lg-12 text-center">
-                  <h3 class="text-center">Privacy Policy</h3>
-                  <p>Entity recognizes the importance of protecting the privacy of all information provided by visitors of this Website. We have created this privacy statement in order to demonstrate its commitment to user’s privacy.
+      <section id="" class="color-section" style="margin-top: 250px">
+   <div style="text-align: center">
+      <h2 style="color: white; ">All-Activities</h2>
+   </div>
 
-                     Our website would follow accepted standards of security and confidentiality of customer data as practiced on the internet.
-                     Every effort will be made to keep the information provided by users in a safe manner, the information will be shown only after obtaining consent from the users/members.
-                     The user agrees that we may use personal information about the user:
-                     To serve the user better and provide services requested by the user.
-                     To improve its marketing and promotional efforts.
-                     To analyze site usage and improve the Site’s content.
-                     Product offerings, and customize the Site’s content, layout, and services.
-                     
-                     The user agrees that we may use his/ her /it personal information to contact him/her and deliver information to him/her/ that, in some cases, are targeted to his/ her /its interests, such as targeted banner advertisements, administrative notices, product offerings, and communications relevant to his/ her/its use of the Site. By accepting the User Agreement and Privacy Policy, he/she/it expressly agrees to receive this information. If he/she/ do not wish to receive these communications, we offers Him/her to opt out of the receipt of certain communications in his/her profile. It is the belief by us that privacy of a person can be best guaranteed by working in conjunction with the Law enforcement authorities. The Company shall not be responsible for any technical failure or malfunctioning of the software/ hardware or delays of any kind.
-                     
-                     We collect information from you when you register on our site or fill out a form. When filling out a form on our site, for any of the above-mentioned reasons, you may be asked to enter your: name,e-mail address, and phone number. You may, however, visit our site anonymously. Any of the information we collect from you is to personalize your experience, to improve our website and to improve customer service. Any data collected will be/ will not be shared with any 3rd party in the privacy disclaimer section.
-                </p>
-               </div>
-               <!-- /col-sm-12-->
-               <!-- <div class="col-md-12 col-lg-5">
-                 
-                  <img src="img/services.png" alt="" class="img-responsive center-block">
-               </div> -->
-               <!-- /col-md-12-->
-            </div>
-            <!-- /row -->
-            <div class="container">
-               <div class="row">
 
-               </div>
+<!--       gallery 1 starts-->
+         <ul>
+            <a>science quiz</a>
+         </ul>
+
+         <div class="imageBox">
+            <div class="gallery">
+               <a href="img/events/science quiz/1 (1).jpeg" target="_blank">
+                  <img src="img/events/science%20quiz/1 (1).jpeg" max-width="600" max-height="400">
+               </a>
             </div>
-           
-            <!-- /row -->
          </div>
-         <!-- /container-->
+         <div class="imageBox">
+            <div class="gallery">
+               <a href="img/events/science quiz/1 (2).jpeg" target="_blank">
+                  <img src="img/events/science%20quiz/1 (2).jpeg" max-width="600" max-height="400">
+               </a>
+            </div>
+         </div>
+         <div class="imageBox">
+            <div class="gallery">
+               <a href="img/events/science quiz/1 (3).jpeg" target="_blank">
+                  <img src="img/events/science%20quiz/1 (3).jpeg" max-width="600" max-height="400">
+               </a>
+            </div>
+         </div>
+         <div class="imageBox">
+            <div class="gallery">
+               <a href="img/events/science quiz/1 (4).jpeg" target="_blank">
+                  <img src="img/events/science%20quiz/1 (4).jpeg" max-width="600" max-height="400">
+               </a>
+            </div>
+         </div>
+         <div class="imageBox">
+            <div class="gallery">
+               <a href="img/events/science quiz/1 (5).jpeg" target="_blank">
+                  <img src="img/events/science%20quiz/1 (5).jpeg" max-width="600" max-height="400">
+               </a>
+            </div>
+         </div>
+         <div class="imageBox">
+            <div class="gallery">
+               <a href="img/events/science quiz/1 (6).jpeg" target="_blank">
+                  <img src="img/events/science%20quiz/1 (6).jpeg" max-width="600" max-height="400">
+               </a>
+            </div>
+         </div>
+         <div class="imageBox">
+            <div class="gallery">
+               <a href="img/events/science quiz/1 (7).jpeg" target="_blank">
+                  <img src="img/events/science%20quiz/1 (7).jpeg" max-width="600" max-height="400">
+               </a>
+            </div>
+         </div>
+
+         <div class="clearfix"></div>
+         <!--       gallery 1 end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </section>
       <!-- /Section ends -->
 	  
